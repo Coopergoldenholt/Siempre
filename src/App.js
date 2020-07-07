@@ -1,26 +1,37 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./css/bootstrap.min.css";
+import "./css/bootstrap-grid.min.css";
+import "@fortawesome/fontawesome-free/css/all.min.css";
+import Nav from "./Components/Nav";
+import TopText from "./Components/TopText";
+import Carousel from "./Components/Carousel";
+import AboutUs from "./Components/AboutUs";
+import VirutalTour from "./Components/VirtualTour";
+import Vendors from "./Components/Vendors";
+import AlwaysRoom from "./Components/AlwaysRoom";
+import ForeverRoom from "./Components/ForeverRoom";
+import ContactUs from "./Components/ContactUs";
+import Footer from "./Components/Footer";
+
+const { REACT_APP_EMAIL_KEY } = process.env;
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	console.log(REACT_APP_EMAIL_KEY);
+
+	return (
+		<div>
+			<Nav />
+			<Carousel />
+			<TopText />
+			<AboutUs />
+			<VirutalTour />
+			<Vendors action={`https://www.flexyform.com/f/${REACT_APP_EMAIL_KEY}`} />
+			<AlwaysRoom />
+			<ForeverRoom />
+			<ContactUs action="https://www.flexyform.com/f/a8518e814c55a5ce51db564dd06d57abb4412549" />
+			<Footer />
+		</div>
+	);
 }
 
 export default App;
