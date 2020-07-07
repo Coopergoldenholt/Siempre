@@ -11,3 +11,8 @@
 	object-fit: cover;
 	filter: brightness(45%);
 }
+
+.carousel-container {
+	margin-bottom: 4rem;
+	height: 95vh;
+}

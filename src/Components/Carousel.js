@@ -16,17 +16,17 @@ const CarouselPage = () => {
 		<MDBCarousel
 			activeItem={1}
 			length={3}
-			className="z-depth-1"
-			style={{ marginBottom: "4rem", height: "95vh" }}
+			className="z-depth-1 carousel-container"
+			style={{ marginBottom: "4rem", height: "90vh" }}
 		>
-			<MDBCarouselInner style={{ height: "95vh" }}>
+			<MDBCarouselInner style={{ height: "90vh" }}>
 				<MDBCarouselItem itemId="1">
 					<MDBView>
 						<img
 							className="d-block w-100"
 							src={image5}
 							alt="First slide"
-							style={{ height: "95vh" }}
+							style={{ height: "90vh" }}
 						/>
 						<MDBMask overlay="black-strong" />
 					</MDBView>
@@ -37,7 +37,7 @@ const CarouselPage = () => {
 							className="d-block w-100"
 							src={image1}
 							alt="Second slide"
-							style={{ height: "95vh" }}
+							style={{ height: "90vh" }}
 						/>
 						<MDBMask overlay="black-strong" />
 					</MDBView>
@@ -48,7 +48,7 @@ const CarouselPage = () => {
 							className="d-block w-100"
 							src={image2}
 							alt="Mattonit's item"
-							style={{ height: "95vh" }}
+							style={{ height: "105vh" }}
 						/>
 						<MDBMask overlay="black-strong" />
 					</MDBView>

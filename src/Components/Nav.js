@@ -57,11 +57,27 @@ const Header = (props) => {
 			onKeyDown={toggleDrawer(side, false)}
 		>
 			<List style={{ backgroundColor: "#e8dae2" }}>
-				<ListItem button key={"home"} onClick={() => props.history.push(`/`)}>
+				<Link smooth to="contact-form">
+					<ListItem
+						button
+						key={"home"}
+						onClick={() => setDrawerState({ right: false })}
+					>
+						<ListItemIcon>
+							<HomeRoundedIcon />
+						</ListItemIcon>
+						<ListItemText primary={"Home"} />
+					</ListItem>
+				</Link>
+				<ListItem
+					button
+					key={"explore"}
+					onClick={() => props.history.push(`/explore`)}
+				>
 					<ListItemIcon>
-						<HomeRoundedIcon />
+						<ExploreIcon />
 					</ListItemIcon>
-					<ListItemText primary={"Home"} />
+					<ListItemText primary={"Explore"} />
 				</ListItem>
 				<ListItem
 					button

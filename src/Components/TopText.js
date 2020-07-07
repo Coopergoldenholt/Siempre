@@ -21,18 +21,19 @@ const TopText = ({ children }) => {
 			style={{
 				display: "flex",
 				color: "white",
-				height: "95vh",
+				height: "80vh",
 				width: "100%",
-				top: "5vh",
+				top: "2vh",
 				right: 0,
 				alignItems: "center",
+				marginBottom: "10vh",
 			}}
 		>
 			<MDBContainer>
 				<MDBRow>
 					<MDBCol md="12" className="white-text text-center">
 						<h2
-							className="pt-5 siempre-title allura"
+							className="siempre-title allura"
 							style={{ fontSize: "4rem", fontFamily: "tahom" }}
 						>
 							Siempre
@@ -40,10 +41,13 @@ const TopText = ({ children }) => {
 						<h2 className="h1-responsive font-weight-bold white-text mb-0 allura">
 							Always & Forever
 						</h2>
-						<hr className="hr-light my-4 w-75" style={{ margin: "auto" }} />
+						<hr
+							className="hr-light my-4 w-75"
+							style={{ margin: "auto", backgroundColor: "white" }}
+						/>
 						<p
-							className="subtext-header h4-responsive mt-2 mb-4"
-							style={isMobile ? { fontSize: "1rem" } : { fontSize: "1.3rem" }}
+							className="subtext-header h4-responsive mt-2 bottom-text"
+							style={isMobile ? { fontSize: "1.1rem" } : { fontSize: "1.3rem" }}
 						>
 							Siempre is Utah's newest and most stunning wedding and event venue
 							that you've always dreamed of. Nestled perfectly on the hillside
@@ -53,7 +57,7 @@ const TopText = ({ children }) => {
 								forever
 							</span>{" "}
 							panoramic views that will take your breath away as you say...{" "}
-							<p style={{ fontSize: "1.3rem" }} className="allura">
+							<p style={{ fontSize: "1.3rem" }} className="allura bottom-text">
 								I Do!
 							</p>
 						</p>

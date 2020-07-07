@@ -1,39 +1,39 @@
 * {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 300;
 }
 
 .siempre-title {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 500;
-  font-size: 4rem;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 500;
+	font-size: 4rem;
 }
 
 .bnt-home {
-  display: inline-block;
-  font-weight: 400;
-  color: #e8dae2;
-  text-align: center;
-  vertical-align: middle;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  background-color: transparent;
-  border: 1px solid transparent;
-  padding: 0.375rem 0.75rem;
-  font-size: 1rem;
-  line-height: 1.5;
-  border-radius: 0.25rem;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  border: 2px solid #e8dae2;
-  background-color: transparent;
+	display: inline-block;
+	font-weight: 400;
+	color: #e8dae2;
+	text-align: center;
+	vertical-align: middle;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	background-color: transparent;
+	border: 1px solid transparent;
+	padding: 0.375rem 0.75rem;
+	font-size: 1rem;
+	line-height: 1.5;
+	border-radius: 0.25rem;
+	transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+		border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+	border: 2px solid #e8dae2;
+	background-color: transparent;
 }
 
 .bnt-home:hover {
-  background-color: #e8dae2;
-  color: black;
+	background-color: #e8dae2;
+	color: black;
 }
 
 /* .bnt-home:focus {
@@ -42,50 +42,60 @@
 } */
 
 .ripple {
-  background-position: center;
-  transition: background 0.8s;
+	background-position: center;
+	transition: background 0.8s;
 }
 .ripple:hover {
-  background: #e8dae2 radial-gradient(circle, transparent 1%, #e8dae2 1%)
-    center/15000%;
+	background: #e8dae2 radial-gradient(circle, transparent 1%, #e8dae2 1%)
+		center/15000%;
 }
 .ripple:focus {
-  outline: none;
+	outline: none;
 }
 .ripple:active {
-  background-color: #faf7f9;
-  background-size: 100%;
-  transition: background 0s;
+	background-color: #faf7f9;
+	background-size: 100%;
+	transition: background 0s;
 }
 
 .allura {
-  font-family: 'Allura', cursive;
-  font-size: 2rem;
+	font-family: "Allura", cursive;
+	font-size: 2rem;
 }
 
 .bnt-contact {
-  display: inline-block;
-  font-weight: 400;
-  color: black;
-  text-align: center;
-  vertical-align: middle;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  background-color: transparent;
-  border: 1px solid transparent;
-  padding: 0.375rem 1.75rem;
-  font-size: 1rem;
-  line-height: 1.5;
-  border-radius: 0.25rem;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  border: 2px solid #e8dae2;
-  background-color: #e8dae2;
+	display: inline-block;
+	font-weight: 400;
+	color: black;
+	text-align: center;
+	vertical-align: middle;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	background-color: transparent;
+	border: 1px solid transparent;
+	padding: 0.375rem 1.75rem;
+	font-size: 1rem;
+	line-height: 1.5;
+	border-radius: 0.25rem;
+	transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+		border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+	border: 2px solid #e8dae2;
+	background-color: #e8dae2;
 }
 
 .bnt-contact:hover {
-  background-color: transparent;
-  color: black;
+	background-color: transparent;
+	color: black;
+}
+
+.bottom-text {
+	margin-bottom: 1.5rem;
+}
+
+@media only screen and (max-width: 600px) {
+	.bottom-text {
+		margin-bottom: 0.5rem;
+	}
 }
