@@ -39,7 +39,7 @@ const AboutUs = () => {
 								</span>{" "}
 								be your dream location to a stress-free joyful day. Because
 								every detail matters, our event coordinators will sit down with
-								you to help you plan, prepare, ande execute your special day.
+								you to help you plan, prepare, and execute your special day.
 							</p>
 							{/* <button type="button" class="btn btn-orange btn-rounded mx-0">
                 Download

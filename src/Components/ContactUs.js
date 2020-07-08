@@ -39,11 +39,10 @@ class ContactForm extends React.Component {
 							</p>
 							<p style={{ marginBottom: "25px" }}>
 								Just 25 miles south of Salt Lake City, in Draper, Utah, you
-								can't miss us! Just look for the beautiful garden rotunda, which
-								is the Siempre's signature trademark, which will be visable from
-								I-15, conviently located 5 minutes away. In addition, we are
-								just 1/2 mile northeast of the Church of Jesus Chrst of
-								Latter-day Saints Draper temple.{" "}
+								can't miss us! Just look for the beautiful garden rotunda,
+								Siempre's signature trademark, which will be visable from I-15.
+								In addition, we are just 1/2 mile northeast of the Church of
+								Jesus Christ of Latter-day Saints Draper temple.{" "}
 							</p>
 							<iframe
 								style={{ width: "100%", height: "100%" }}
@@ -65,7 +64,7 @@ class ContactForm extends React.Component {
 						>
 							<p class="h4 ">Interested?</p>
 							<p>
-								Fill out the form below and a represntative will reach out to
+								Fill out the form below and a representative will reach out to
 								you as soon as possible!
 							</p>
 

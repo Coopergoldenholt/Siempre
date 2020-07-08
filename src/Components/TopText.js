@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { MDBContainer, MDBBtn, MDBIcon, MDBRow, MDBCol } from "mdbreact";
+import { Link } from "react-scroll";
 import "../css/mask.css";
 
 const TopText = ({ children }) => {
@@ -68,17 +69,19 @@ const TopText = ({ children }) => {
             <MDBIcon icon="home" className="mr-2" /> Visit us
           </MDBBtn> */}
 						{/* <Link to="/#contact-form"> */}
-						<button
-							type="button"
-							className="bnt-home ripple"
-							onClick={() => scrollTo("#contact-form")}
-							// style={{
-							//   border: '2px solid #e8dae2',
-							//   backgroundColor: 'transparent',
-							// }}
-						>
-							<MDBIcon icon="home" className="mr-2" /> Contact Us
-						</button>
+						<Link to="contact-form" smooth offset={-60}>
+							<button
+								type="button"
+								className="bnt-home ripple"
+								onClick={() => scrollTo("#contact-form")}
+								// style={{
+								//   border: '2px solid #e8dae2',
+								//   backgroundColor: 'transparent',
+								// }}
+							>
+								<MDBIcon icon="home" className="mr-2" /> Contact Us
+							</button>
+						</Link>
 						{/* </Link> */}
 					</MDBCol>
 				</MDBRow>

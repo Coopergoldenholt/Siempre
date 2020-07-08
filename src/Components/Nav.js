@@ -73,7 +73,7 @@ const Header = (props) => {
 					</ListItem>
 				</Link>
 
-				<Link smooth to="about-us">
+				<Link smooth to="about-us" offset={-60}>
 					<ListItem
 						button
 						key={"home"}
@@ -86,7 +86,7 @@ const Header = (props) => {
 					</ListItem>
 				</Link>
 
-				<Link smooth to="virtual-tour">
+				<Link smooth to="virtual-tour" offset={-60}>
 					<ListItem
 						button
 						key={"home"}
@@ -98,7 +98,7 @@ const Header = (props) => {
 						<ListItemText primary={"Virtual Tour"} />
 					</ListItem>
 				</Link>
-				<Link smooth to="vendors">
+				<Link smooth to="vendors" offset={-60}>
 					<ListItem
 						button
 						key={"home"}
@@ -110,7 +110,7 @@ const Header = (props) => {
 						<ListItemText primary={"Vendors"} />
 					</ListItem>
 				</Link>
-				<Link smooth to="always-room">
+				<Link smooth to="always-room" offset={-60}>
 					<ListItem
 						button
 						key={"home"}
@@ -122,7 +122,7 @@ const Header = (props) => {
 						<ListItemText primary={"Rooms"} />
 					</ListItem>
 				</Link>
-				<Link smooth to="contact-form">
+				<Link smooth to="contact-form" offset={-60}>
 					<ListItem
 						button
 						key={"home"}
@@ -141,7 +141,7 @@ const Header = (props) => {
 	return (
 		<>
 			<Paper className={classes.paper} id="header-paper" elevation="5">
-				<Link smooth to="home">
+				<Link smooth to="home" offset={-60}>
 					<div className="logo-space allura" button>
 						Siempre
 					</div>
@@ -152,19 +152,19 @@ const Header = (props) => {
 					style={{ "justify-content": "flex-end", "margin-right": "10px" }}
 				>
 					<Hidden xsDown>
-						<Link smooth to="about-us">
+						<Link smooth to="about-us" offset={-70}>
 							<Button>About Us</Button>
 						</Link>
-						<Link smooth to="virtual-tour">
+						<Link smooth to="virtual-tour" offset={-70}>
 							<Button>Virtual Tour</Button>
 						</Link>
-						<Link smooth to="vendors">
+						<Link smooth to="vendors" offset={-60}>
 							<Button>Vendors</Button>
 						</Link>
-						<Link smooth to="always-room">
+						<Link smooth to="always-room" offset={-70}>
 							<Button>Rooms</Button>
 						</Link>
-						<Link smooth to="contact-form">
+						<Link smooth to="contact-form" offset={-70}>
 							<Button>Contact Us</Button>
 						</Link>
 					</Hidden>
