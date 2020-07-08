@@ -9,8 +9,11 @@ import ListItem from "@material-ui/core/ListItem";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
 import HomeRoundedIcon from "@material-ui/icons/HomeRounded";
-import ExploreIcon from "@material-ui/icons/Explore";
-import HelpIcon from "@material-ui/icons/Help";
+import InfoRoundedIcon from "@material-ui/icons/InfoRounded";
+import AirportShuttleRoundedIcon from "@material-ui/icons/AirportShuttleRounded";
+import AccountCircleRoundedIcon from "@material-ui/icons/AccountCircleRounded";
+import MeetingRoomRoundedIcon from "@material-ui/icons/MeetingRoomRounded";
+import MailRoundedIcon from "@material-ui/icons/MailRounded";
 
 const Header = (props) => {
 	const [drawerState, setDrawerState] = useState({ right: false });
@@ -57,7 +60,7 @@ const Header = (props) => {
 			onKeyDown={toggleDrawer(side, false)}
 		>
 			<List style={{ backgroundColor: "#e8dae2" }}>
-				<Link smooth to="contact-form">
+				<Link smooth to="home">
 					<ListItem
 						button
 						key={"home"}
@@ -69,36 +72,68 @@ const Header = (props) => {
 						<ListItemText primary={"Home"} />
 					</ListItem>
 				</Link>
-				<ListItem
-					button
-					key={"explore"}
-					onClick={() => props.history.push(`/explore`)}
-				>
-					<ListItemIcon>
-						<ExploreIcon />
-					</ListItemIcon>
-					<ListItemText primary={"Explore"} />
-				</ListItem>
-				<ListItem
-					button
-					key={"explore"}
-					onClick={() => props.history.push(`/explore`)}
-				>
-					<ListItemIcon>
-						<ExploreIcon />
-					</ListItemIcon>
-					<ListItemText primary={"Explore"} />
-				</ListItem>
-				<ListItem
-					button
-					key={"quiz"}
-					onClick={() => props.history.push(`/quiz`)}
-				>
-					<ListItemIcon>
-						<HelpIcon />
-					</ListItemIcon>
-					<ListItemText primary={"Quiz"} />
-				</ListItem>
+
+				<Link smooth to="about-us">
+					<ListItem
+						button
+						key={"home"}
+						onClick={() => setDrawerState({ right: false })}
+					>
+						<ListItemIcon>
+							<InfoRoundedIcon />
+						</ListItemIcon>
+						<ListItemText primary={"About Us"} />
+					</ListItem>
+				</Link>
+
+				<Link smooth to="virtual-tour">
+					<ListItem
+						button
+						key={"home"}
+						onClick={() => setDrawerState({ right: false })}
+					>
+						<ListItemIcon>
+							<AirportShuttleRoundedIcon />
+						</ListItemIcon>
+						<ListItemText primary={"Virtual Tour"} />
+					</ListItem>
+				</Link>
+				<Link smooth to="vendors">
+					<ListItem
+						button
+						key={"home"}
+						onClick={() => setDrawerState({ right: false })}
+					>
+						<ListItemIcon>
+							<AccountCircleRoundedIcon />
+						</ListItemIcon>
+						<ListItemText primary={"Vendors"} />
+					</ListItem>
+				</Link>
+				<Link smooth to="always-room">
+					<ListItem
+						button
+						key={"home"}
+						onClick={() => setDrawerState({ right: false })}
+					>
+						<ListItemIcon>
+							<MeetingRoomRoundedIcon />
+						</ListItemIcon>
+						<ListItemText primary={"Rooms"} />
+					</ListItem>
+				</Link>
+				<Link smooth to="contact-form">
+					<ListItem
+						button
+						key={"home"}
+						onClick={() => setDrawerState({ right: false })}
+					>
+						<ListItemIcon>
+							<MailRoundedIcon />
+						</ListItemIcon>
+						<ListItemText primary={"Contact Us"} />
+					</ListItem>
+				</Link>
 			</List>
 		</div>
 	);
@@ -106,13 +141,11 @@ const Header = (props) => {
 	return (
 		<>
 			<Paper className={classes.paper} id="header-paper" elevation="5">
-				<div
-					className="logo-space"
-					button
-					onClick={() => props.history.push("/")}
-				>
-					{" "}
-				</div>
+				<Link smooth to="home">
+					<div className="logo-space allura" button>
+						Siempre
+					</div>
+				</Link>
 
 				<div
 					// className="header-explore"

@@ -7,13 +7,14 @@ import {
 	MDBMask,
 } from "mdbreact";
 import "../css/carousel.css";
-import image1 from "../images/WeddingPhoto2.jpg";
+import image1 from "../images/WeddingPhoto2.jpeg";
 import image2 from "../images/WeddingPhoto3.jpg";
-import image5 from "../images/WeddingPhoto.jpg";
+import image5 from "../images/WeddingPhoto.jpeg";
 
 const CarouselPage = () => {
 	return (
 		<MDBCarousel
+			id="home"
 			activeItem={1}
 			length={3}
 			className="z-depth-1 carousel-container"

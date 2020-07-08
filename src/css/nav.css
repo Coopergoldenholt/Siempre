@@ -44,10 +44,13 @@ a {
 }
 
 .logo-space {
-	background-image: url("https://media.macphun.com/img/uploads/customer/how-to/579/15531840725c93b5489d84e9.43781620.jpg?q=85&w=1340");
-	background-size: cover;
-	height: 6vh;
-	width: 5.96vh;
+	/* background-image: url("https://media.macphun.com/img/uploads/customer/how-to/579/15531840725c93b5489d84e9.43781620.jpg?q=85&w=1340");
+	background-size: cover; */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/* height: 6vh; */
+	/* width: 5.96vh; */
 }
 
 .logo-space:hover {

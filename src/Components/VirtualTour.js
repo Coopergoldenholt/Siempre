@@ -1,5 +1,4 @@
 import React from "react";
-import SiempreVideo from "../images/SiempreVideo.mp4";
 const VirtualTour = (props) => (
 	<>
 		<div
@@ -24,7 +23,7 @@ const VirtualTour = (props) => (
 			<div className="embed-responsive embed-responsive-16by9">
 				<iframe
 					style={{ marginRight: 0 }}
-					src={SiempreVideo}
+					src="https://player.vimeo.com/video/436236537"
 					title={props.videoTitle}
 					allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
 					frameBorder="0"
