@@ -25,9 +25,12 @@ function App() {
 			<TopText />
 			<AboutUs />
 			<VirutalTour />
-			<Vendors action={`https://www.flexyform.com/f/${REACT_APP_EMAIL_KEY}`} />
+			{/* <Vendors
+				action={`https://www.flexyform.com/f/a8518e814c55a5ce51db564dd06d57abb4412549`}
+			/> */}
 			<AlwaysRoom />
 			<ForeverRoom />
+			<div>pricing</div>
 			<ContactUs action="https://www.flexyform.com/f/a8518e814c55a5ce51db564dd06d57abb4412549" />
 			<Footer />
 		</div>

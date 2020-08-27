@@ -20,10 +20,10 @@ const AboutUs = () => {
 					</div>
 					<div class="col-md-5 d-flex align-items-center">
 						<div>
-							<h2 class=" mb-4">About Siempre</h2>
-							<p class="text-muted">
+							<h2 class=" mb-4">Inspiration</h2>
+							{/* <p class="text-muted">
 								We <span className="allura"> always</span> believe in...
-							</p>
+							</p> */}
 
 							{/* <p style={{ fontSize: '.9rem' }}>
                 Nestled on the hillside of the Wasatch mountains, with
